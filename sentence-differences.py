@@ -33,7 +33,7 @@ def DLDist(response,correct,rLen,cLen,table):
     '''
     find the Damerau-Levenshtein distance between the two strings
     alternatively, find similar distance between two lists (based on how their elements match)
-    input: two strings, their lengths, and a None-filled (len1+1)x(len2+1) table
+    input: two strings, their lengths (though in recursive calls these numbers may not be the string lengths), and a None-filled (len1+1)x(len2+1) table
     (based on Wikipedia's description of the algorithm at https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance#Definition, modified to include tabulation for speed purposes)
     '''
     compare = []
